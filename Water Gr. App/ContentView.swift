@@ -9,8 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            VStack{
+                NavigationLink(destination: MovieView()){
+                    Text("動画")
+                        .padding(.vertical)
+                        .frame(width:100,height:30)
+                        .background(Color.gray)
+                        .foregroundColor(.white)
+                }
+                NavigationLink(destination: StudyingView()){
+                    Text("学習")
+                        .padding(.vertical)
+                        .frame(width:100,height:30)
+                        .background(Color.gray)
+                        .foregroundColor(.white)
+                }
+                NavigationLink(destination: VisualizationView()){
+                    Text("可視化")
+                        .padding(.vertical)
+                        .frame(width:100,height:30)
+                        .background(Color.gray)
+                        .foregroundColor(.white)
+                }
+            }
+        }
     }
 }
 

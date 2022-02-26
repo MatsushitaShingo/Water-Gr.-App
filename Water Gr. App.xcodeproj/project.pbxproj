@@ -14,6 +14,10 @@
 		1E7E46D027CA8E54003E2986 /* Water_Gr__AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7E46CF27CA8E54003E2986 /* Water_Gr__AppTests.swift */; };
 		1E7E46DA27CA8E54003E2986 /* Water_Gr__AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7E46D927CA8E54003E2986 /* Water_Gr__AppUITests.swift */; };
 		1E7E46DC27CA8E54003E2986 /* Water_Gr__AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7E46DB27CA8E54003E2986 /* Water_Gr__AppUITestsLaunchTests.swift */; };
+		1E7E46EB27CA8FD9003E2986 /* StudyingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7E46EA27CA8FD9003E2986 /* StudyingView.swift */; };
+		1E7E46ED27CA9026003E2986 /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7E46EC27CA9026003E2986 /* MovieView.swift */; };
+		1E7E46EF27CA903D003E2986 /* VisualizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7E46EE27CA903D003E2986 /* VisualizationView.swift */; };
+		1E7E46F127CA92B4003E2986 /* movie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1E7E46F027CA92B3003E2986 /* movie.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		1E7E46D527CA8E54003E2986 /* Water Gr. AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Water Gr. AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7E46D927CA8E54003E2986 /* Water_Gr__AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Water_Gr__AppUITests.swift; sourceTree = "<group>"; };
 		1E7E46DB27CA8E54003E2986 /* Water_Gr__AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Water_Gr__AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1E7E46EA27CA8FD9003E2986 /* StudyingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyingView.swift; sourceTree = "<group>"; };
+		1E7E46EC27CA9026003E2986 /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
+		1E7E46EE27CA903D003E2986 /* VisualizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizationView.swift; sourceTree = "<group>"; };
+		1E7E46F027CA92B3003E2986 /* movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = movie.mp4; path = ../../Downloads/movie.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,7 @@
 		1E7E46B227CA8E52003E2986 = {
 			isa = PBXGroup;
 			children = (
+				1E7E46F027CA92B3003E2986 /* movie.mp4 */,
 				1E7E46BD27CA8E52003E2986 /* Water Gr. App */,
 				1E7E46CE27CA8E54003E2986 /* Water Gr. AppTests */,
 				1E7E46D827CA8E54003E2986 /* Water Gr. AppUITests */,
@@ -96,6 +105,9 @@
 			children = (
 				1E7E46BE27CA8E52003E2986 /* Water_Gr__AppApp.swift */,
 				1E7E46C027CA8E52003E2986 /* ContentView.swift */,
+				1E7E46EC27CA9026003E2986 /* MovieView.swift */,
+				1E7E46EA27CA8FD9003E2986 /* StudyingView.swift */,
+				1E7E46EE27CA903D003E2986 /* VisualizationView.swift */,
 				1E7E46C227CA8E53003E2986 /* Assets.xcassets */,
 				1E7E46C427CA8E53003E2986 /* Preview Content */,
 			);
@@ -231,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E7E46F127CA92B4003E2986 /* movie.mp4 in Resources */,
 				1E7E46C627CA8E53003E2986 /* Preview Assets.xcassets in Resources */,
 				1E7E46C327CA8E53003E2986 /* Assets.xcassets in Resources */,
 			);
@@ -258,7 +271,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E7E46C127CA8E52003E2986 /* ContentView.swift in Sources */,
+				1E7E46ED27CA9026003E2986 /* MovieView.swift in Sources */,
 				1E7E46BF27CA8E52003E2986 /* Water_Gr__AppApp.swift in Sources */,
+				1E7E46EF27CA903D003E2986 /* VisualizationView.swift in Sources */,
+				1E7E46EB27CA8FD9003E2986 /* StudyingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +435,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Water Gr. App/Preview Content\"";
+				DEVELOPMENT_TEAM = XVAXRG42G2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -447,6 +464,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Water Gr. App/Preview Content\"";
+				DEVELOPMENT_TEAM = XVAXRG42G2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
