@@ -11,7 +11,11 @@ struct VisualizationView: View {
     var body: some View {
         VStack{
          Text("現在の節水料")
-            Text("選ぶ")
+            Button(action:{
+                //ボタンが押されたときのアクション
+            }){
+                Text("選ぶ")
+            }
             Text("コップいっぱい")
         }
     }

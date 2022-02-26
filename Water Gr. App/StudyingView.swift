@@ -13,7 +13,9 @@ struct StudyingView: View {
             Text("汚染")
                 .padding()
             Text("ここは汚染のステージです")
+                .padding()
             Text("5問全問正解でクリア")
+                .padding()
             Text("クリアすると良いことがあるかも・・・？")
                 .padding()
         }
