@@ -12,7 +12,7 @@ struct ContentView: View {
         NavigationView{
             VStack{
                 NavigationLink(destination: MovieView()){
-                    Text("動画")
+                    Text("動画再生機能")
                         .padding(.vertical)
                         .frame(width:100,height:30)
                         .background(Color.gray)
