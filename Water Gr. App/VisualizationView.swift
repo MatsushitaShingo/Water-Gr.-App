@@ -10,7 +10,16 @@ import SwiftUI
 struct VisualizationView: View {
     var body: some View {
         VStack{
-         Text("現在の節水料")
+            VStack{
+                //左上に表示させていきたい　←.offset()を使う？
+                Text("現在の節水料")
+                               .font(.largeTitle)
+                               .bold()
+                Text("0L")
+                Text("○○月○○日")
+                    .padding()
+            }
+         
             Button(action:{
                 //ボタンが押されたときのアクション
             }){
@@ -24,5 +33,6 @@ struct VisualizationView: View {
 struct VisualizationView_Previews: PreviewProvider {
     static var previews: some View {
         VisualizationView()
+.previewInterfaceOrientation(.landscapeLeft)
     }
 }
