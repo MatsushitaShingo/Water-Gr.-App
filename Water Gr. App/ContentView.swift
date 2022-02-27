@@ -12,6 +12,7 @@ struct ContentView: View {
         NavigationView{
             VStack{
                 NavigationLink(destination: MovieView()){
+                    Image(systemName: "drop.fill")
                     Text("動画再生機能")
                         .padding(.vertical)
                         .frame(width:100,height:30)
@@ -19,6 +20,7 @@ struct ContentView: View {
                         .foregroundColor(.white)
                 }
                 NavigationLink(destination: StudyingView()){
+                    Image(systemName: "drop.fill")
                     Text("学習機能")
                         .padding(.vertical)
                         .frame(width:100,height:30)
@@ -26,6 +28,7 @@ struct ContentView: View {
                         .foregroundColor(.white)
                 }
                 NavigationLink(destination: VisualizationView()){
+                    Image(systemName: "drop.fill")
                     Text("可視化")
                         .padding(.vertical)
                         .frame(width:100,height:30)
