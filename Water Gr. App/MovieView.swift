@@ -10,17 +10,52 @@ import AVKit
 
 struct MovieView: View {
     
-    private let player = AVPlayer(url: Bundle.main.url(forResource:"movie",withExtension: "mp4")!)
+    let player = URL(fileURLWithPath: Bundle.main.path(forResource:"movie",ofType: "mp4")!)
     
     var body: some View {
         VStack{
-                VideoPlayer(player: player)
-                    .onAppear(){
-                        player.play()
-                    }
-                    .onDisappear(){
-                        player.pause()
-                    }
+            HStack{
+                VStack{
+                    Text("節水")
+                    VideoPlayer(player: AVPlayer(url: player))
+                        .frame(width: 350, height: 200)
+                        .offset(x:-80)
+                }.padding()
+                VStack{
+                    Text("地下水")
+                    VideoPlayer(player: AVPlayer(url: player))
+                        .frame(width: 350, height: 200)
+                        .offset(x:-80)
+                }
+            }
+            HStack{
+                VStack{
+                    Text("世界の水")
+                    VideoPlayer(player: AVPlayer(url: player))
+                        .frame(width: 350, height: 200)
+                        .offset(x:-80)
+                }.padding()
+                VStack{
+                    Text("歴史")
+                    VideoPlayer(player: AVPlayer(url: player))
+                        .frame(width: 350, height: 200)
+                        .offset(x:-80)
+                }
+            }
+            HStack{
+                VStack{
+                    Text("水循環")
+                    VideoPlayer(player: AVPlayer(url: player))
+                        .frame(width: 350, height: 200)
+                        .offset(x:-80)
+                }.padding()
+                VStack{
+                    Text("SDGｓ")
+                    VideoPlayer(player: AVPlayer(url: player))
+                        .frame(width: 350, height: 200)
+                        .offset(x:-80)
+                }
+            }
         }
     }
 }
@@ -28,5 +63,6 @@ struct MovieView: View {
 struct MovieView_Previews: PreviewProvider {
     static var previews: some View {
         MovieView()
+.previewInterfaceOrientation(.landscapeLeft)
     }
 }
