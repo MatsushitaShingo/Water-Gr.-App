@@ -18,6 +18,7 @@
 		1E7E46ED27CA9026003E2986 /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7E46EC27CA9026003E2986 /* MovieView.swift */; };
 		1E7E46EF27CA903D003E2986 /* VisualizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7E46EE27CA903D003E2986 /* VisualizationView.swift */; };
 		1E7E46F127CA92B4003E2986 /* movie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1E7E46F027CA92B3003E2986 /* movie.mp4 */; };
+		1EED2FCA27D14B7000209F1C /* mov_hts-samp001.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1EED2FC927D14B7000209F1C /* mov_hts-samp001.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		1E7E46EC27CA9026003E2986 /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
 		1E7E46EE27CA903D003E2986 /* VisualizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizationView.swift; sourceTree = "<group>"; };
 		1E7E46F027CA92B3003E2986 /* movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = movie.mp4; path = ../../Downloads/movie.mp4; sourceTree = "<group>"; };
+		1EED2FC927D14B7000209F1C /* mov_hts-samp001.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mov_hts-samp001.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		1E7E46B227CA8E52003E2986 = {
 			isa = PBXGroup;
 			children = (
+				1EED2FC927D14B7000209F1C /* mov_hts-samp001.mp4 */,
 				1E7E46F027CA92B3003E2986 /* movie.mp4 */,
 				1E7E46BD27CA8E52003E2986 /* Water Gr. App */,
 				1E7E46CE27CA8E54003E2986 /* Water Gr. AppTests */,
@@ -243,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EED2FCA27D14B7000209F1C /* mov_hts-samp001.mp4 in Resources */,
 				1E7E46F127CA92B4003E2986 /* movie.mp4 in Resources */,
 				1E7E46C627CA8E53003E2986 /* Preview Assets.xcassets in Resources */,
 				1E7E46C327CA8E53003E2986 /* Assets.xcassets in Resources */,
