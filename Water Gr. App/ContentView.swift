@@ -17,7 +17,7 @@ struct ContentView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 200, height: 200)
-                        Text("動画再生機能")
+                        Text("動画再生機能だよ")
                             .padding(.vertical)
                             .foregroundColor(.white)
                     }
