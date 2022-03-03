@@ -12,25 +12,37 @@ struct ContentView: View {
         NavigationView{
             VStack{
                 NavigationLink(destination: MovieView()){
-                    Text("動画再生機能")
-                        .padding(.vertical)
-                        .frame(width:100,height:30)
-                        .background(Color.gray)
-                        .foregroundColor(.white)
+                    ZStack{
+                        Image(systemName: "drop.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 200, height: 200)
+                        Text("動画再生機能")
+                            .padding(.vertical)
+                            .foregroundColor(.white)
+                    }
                 }
                 NavigationLink(destination: StudyingView()){
-                    Text("学習機能")
-                        .padding(.vertical)
-                        .frame(width:100,height:30)
-                        .background(Color.gray)
-                        .foregroundColor(.white)
+                    ZStack{
+                        Image(systemName: "drop.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 200, height: 200)
+                        Text("学習機能")
+                            .padding(.vertical)
+                            .foregroundColor(.white)
+                    }
                 }
                 NavigationLink(destination: VisualizationView()){
-                    Text("可視化")
-                        .padding(.vertical)
-                        .frame(width:100,height:30)
-                        .background(Color.gray)
-                        .foregroundColor(.white)
+                    ZStack{
+                        Image(systemName: "drop.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 200, height: 200)
+                        Text("可視化機能")
+                            .padding(.vertical)
+                            .foregroundColor(.white)
+                    }
                 }
             }
         }
