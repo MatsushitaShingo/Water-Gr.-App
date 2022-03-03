@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView{
-            VStack{
+            HStack{
                 NavigationLink(destination: MovieView()){
                     ZStack{
                         Image(systemName: "drop.fill")
@@ -45,7 +45,7 @@ struct ContentView: View {
                     }
                 }
             }
-        }
+        }.navigationViewStyle(.stack)
     }
 }
 
