@@ -32,7 +32,7 @@ struct MovieView: View {
                     Button(action: {
                         self.showingDetail2.toggle()
                     }){
-                        Image("水族館")
+                        Image("飛行機窓")
                     }.sheet(isPresented: $showingDetail2){
                         moviestart1()
                     }
