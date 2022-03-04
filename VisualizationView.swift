@@ -26,16 +26,6 @@ struct VisualizationView: View {
                 Text("選ぶ")
             }
             Text("コップいっぱい")
-            HStack{
-                Image(systemName: "Circle").scaledToFit()
-                Image(systemName: "Circle")
-                Image(systemName: "Circle")
-                Image(systemName: "Circle")
-                Image(systemName: "Circle")
-                Image(systemName: "Circle")
-                Image(systemName: "Circle")
-                Image(systemName: "Circle")
-            }
         }
     }
 }

@@ -37,76 +37,77 @@ struct MovieView: View {
                         moviestart1()
                     }
                 }
+                HStack{
+                    Button(action: {
+                        self.showingDetail1.toggle()
+                    }){
+                        Image("夜景")
+                    }.sheet(isPresented: $showingDetail1){
+                        moviestart()
+                    }
+                    
+                    Button(action: {
+                        self.showingDetail2.toggle()
+                    }){
+                        Image("飛行機窓")
+                    }.sheet(isPresented: $showingDetail2){
+                        moviestart1()
+                    }
+                }
+
+                HStack{
+                    Button(action: {
+                        self.showingDetail1.toggle()
+                    }){
+                        Image("夜景")
+                    }.sheet(isPresented: $showingDetail1){
+                        moviestart()
+                    }
+                    
+                    Button(action: {
+                        self.showingDetail2.toggle()
+                    }){
+                        Image("飛行機窓")
+                    }.sheet(isPresented: $showingDetail2){
+                        moviestart1()
+                    }
+                }
+                HStack{
+                    Button(action: {
+                        self.showingDetail1.toggle()
+                    }){
+                        Image("夜景")
+                    }.sheet(isPresented: $showingDetail1){
+                        moviestart()
+                    }
+                    
+                    Button(action: {
+                        self.showingDetail2.toggle()
+                    }){
+                        Image("飛行機窓")
+                    }.sheet(isPresented: $showingDetail2){
+                        moviestart1()
+                    }
+                }
+
+                HStack{
+                    Button(action: {
+                        self.showingDetail1.toggle()
+                    }){
+                        Image("夜景")
+                    }.sheet(isPresented: $showingDetail1){
+                        moviestart()
+                    }
+                    
+                    Button(action: {
+                        self.showingDetail2.toggle()
+                    }){
+                        Image("飛行機窓")
+                    }.sheet(isPresented: $showingDetail2){
+                        moviestart1()
+                    }
+                }
         }
-        
-                
-                
-//        ScrollView{
-//            VStack{
-//                HStack{
-//                    VStack{
-//                        Text("節水1")
-//                        VideoPlayer(player: AVPlayer(url: player))
-//                            .frame(width: 350, height: 200)
-//                            //.offset(x:-80)
-//                    }.padding()
-//                    VStack{
-//                        Text("節水2")
-//                        VideoPlayer(player: AVPlayer(url: player))
-//                            .frame(width: 350, height: 200)
-//                    }
-//                }
-//                HStack{
-//                    VStack{
-//                        Text("歴史1")
-//                        VideoPlayer(player: AVPlayer(url: player))
-//                            .frame(width: 350, height: 200)
-//                    }.padding()
-//                    VStack{
-//                        Text("歴史2")
-//                        VideoPlayer(player: AVPlayer(url: player))
-//                            .frame(width: 350, height: 200)
-//                    }
-//                }
-//                HStack{
-//                    VStack{
-//                        Text("水循環1")
-//                        VideoPlayer(player: AVPlayer(url: player))
-//                            .frame(width: 350, height: 200)
-//                    }.padding()
-//                    VStack{
-//                        Text("水循環2")
-//                        VideoPlayer(player: AVPlayer(url: player))
-//                            .frame(width: 350, height: 200)
-//                    }
-//                }
-//                HStack{
-//                    VStack{
-//                        Text("SDGｓ1")
-//                        VideoPlayer(player: AVPlayer(url: player))
-//                            .frame(width: 350, height: 200)
-//                    }.padding()
-//                    VStack{
-//                        Text("SDGｓ2")
-//                        VideoPlayer(player: AVPlayer(url: player))
-//                            .frame(width: 350, height: 200)
-//                    }
-//                }
-//                HStack{
-//                    VStack{
-//                        Text("熊本の水1")
-//                        VideoPlayer(player: AVPlayer(url: player))
-//                            .frame(width: 350, height: 200)
-//
-//                    }.padding()
-//                    VStack{
-//                        Text("熊本の水2")
-//                        VideoPlayer(player: AVPlayer(url: player))
-//                            .frame(width: 350, height: 200)
-//                    }
-//                }
-//            }
-//        }
     }
 }
 struct moviestart: View{
