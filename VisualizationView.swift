@@ -11,21 +11,29 @@ struct VisualizationView: View {
     var body: some View {
         VStack{
             VStack{
-                //左上に表示させていきたい　←.offset()を使う？
                 Text("現在の節水料")
                                .font(.largeTitle)
                                .bold()
+                
                 Text("0L")
                 Text("○○月○○日")
                     .padding()
-            }
+                
+            }.frame(width: 250, height:160, alignment: .bottomTrailing)
+                .border(Color.red, width: 2) .offset(x:-400,y:-200)
+            Image("夜景").clipShape(Circle())
          
             Button(action:{
                 //ボタンが押されたときのアクション
             }){
-                Text("選ぶ")
+                ZStack{
+                    Color.blue
+                        .frame(width:110,height: 110)
+                        .overlay(Text("選ぶ").foregroundColor(.red))
+                }.offset(x:400,y:200)
             }
             Text("コップいっぱい")
+                .offset(y:200)
         }
     }
 }
@@ -33,6 +41,6 @@ struct VisualizationView: View {
 struct VisualizationView_Previews: PreviewProvider {
     static var previews: some View {
         VisualizationView()
-.previewInterfaceOrientation(.landscapeLeft)
+.previewInterfaceOrientation(.landscapeRight)
     }
 }
